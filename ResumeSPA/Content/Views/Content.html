@@ -1,0 +1,29 @@
+﻿<div ng-controller="mainController" class="container">
+    <h1>All Jobs</h1>
+    <div class="row">
+        <div class="col-sm-12" ng-repeat="job in jobs">
+            <article>
+                <h2><a>{{job.Title}}</a></h2>
+
+                <div class="row">
+                    <div class="group1 col-sm-6 col-md-6">
+                        <span class="glyphicon glyphicon-bookmark"></span>{{job.Date}}
+                    </div>
+                    <div class="group2 col-sm-6 col-md-6">
+                        <div class="lead" ng-bind-html="job.Description"></div>
+                        {{job.Person.Name}}
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <br />
+
+                
+
+                <hr>
+            </article>
+        </div>
+    </div>
+</div>
